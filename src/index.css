@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    body{
+        @apply bg-[#212121] text-white
+    }
+    .card{
+        @apply w-[350px] fixed  bg-[#23272a] p-[30px] rounded-lg flex flex-col gap-3;
+        @apply top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]
+    }
+    .star-icon{
+        @apply rounded-full w-[40px] h-[40px] flex justify-center items-center;
+        @apply bg-[#3e4449] p-2
+    }
+    .rating-btn{
+        @apply w-[50px] h-[50px] text-[16px] rounded-full bg-[#3e4449];
+        @apply hover:bg-gray-500
+    }
+    .card-rating{
+        @apply flex gap-3
+    }
+    .submit-btn{
+        @apply w-full bg-orange-500 p-[10px];
+        @apply font-bold rounded-lg tracking-wider;
+        @apply hover:bg-white hover:text-black
+    }
+    .submit-btn:disabled{
+        @apply bg-[#3e4449] text-white cursor-not-allowed
+    }
+    .rating-btn-active{
+        @apply  w-[50px] h-[50px] text-[16px] rounded-full bg-orange-500;
+    }
+    .thanks-icon{
+        @apply w-full flex justify-center 
+    }
+    .numOfRating{
+        @apply p-1 w-[200px] rounded-full text-center text-orange-500 bg-[#3e4449]
+    }
+    .thanks-card-title{
+        @apply text-center
+    }
+    .thanks-card-description{
+        @apply text-center
+    }
+    .thanks-card{
+        @apply w-[350px]  bg-[#23272a] p-[30px] rounded-lg flex flex-col gap-5;
+        @apply top-[50%] left-[50%] fixed translate-x-[-50%] translate-y-[-50%]
+    }
+}
