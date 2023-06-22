@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import ThankIcon from '../../assets/illustration-thank-you.svg'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IconArrowLeft } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { container, item } from '../../utils/motion';
@@ -8,7 +8,6 @@ import { container, item } from '../../utils/motion';
 
 const Thanks = () => {
   const [rating, setRating] = useState<number>(0);
-  const Navigate = useNavigate()
 
   useEffect(() => {
     const storedRating = localStorage.getItem('rating');
